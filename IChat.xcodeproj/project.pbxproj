@@ -3,27 +3,123 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		550A06C2243D24EE007C171E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06C1243D24EE007C171E /* AppDelegate.swift */; };
 		550A06C4243D24EE007C171E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06C3243D24EE007C171E /* SceneDelegate.swift */; };
-		550A06C6243D24EE007C171E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06C5243D24EE007C171E /* ViewController.swift */; };
-		550A06C9243D24EE007C171E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550A06C7243D24EE007C171E /* Main.storyboard */; };
+		550A06C6243D24EE007C171E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06C5243D24EE007C171E /* AuthViewController.swift */; };
 		550A06CB243D24F2007C171E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550A06CA243D24F2007C171E /* Assets.xcassets */; };
 		550A06CE243D24F2007C171E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 550A06CC243D24F2007C171E /* LaunchScreen.storyboard */; };
+		550A06D6243D3339007C171E /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06D5243D3339007C171E /* UIButton + Extension.swift */; };
+		550A06D8243D3796007C171E /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06D7243D3796007C171E /* UIFont + Extension.swift */; };
+		550A06DA243D39B3007C171E /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06D9243D39B3007C171E /* UIColor + Extension.swift */; };
+		550A06DC243DF32F007C171E /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06DB243DF32F007C171E /* Label + Extension.swift */; };
+		550A06DE243DF4FB007C171E /* UIimageView + Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06DD243DF4FB007C171E /* UIimageView + Extansion.swift */; };
+		550A06E2243DFA7C007C171E /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06E1243DFA7C007C171E /* ButtonFormView.swift */; };
+		550A06E4243E5B60007C171E /* StackViev + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06E3243E5B60007C171E /* StackViev + Extension.swift */; };
+		550A06E6243E7FBE007C171E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06E5243E7FBE007C171E /* SignUpViewController.swift */; };
+		550A06E8243E88A9007C171E /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06E7243E88A9007C171E /* OneLineTextField.swift */; };
+		550A06EA243FADBA007C171E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06E9243FADBA007C171E /* LoginViewController.swift */; };
+		550A06EC243FB7EF007C171E /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06EB243FB7EF007C171E /* SetupProfileViewController.swift */; };
+		550A06EE243FB9A9007C171E /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A06ED243FB9A9007C171E /* AddPhotoView.swift */; };
+		550A070C24409F61007C171E /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A070B24409F61007C171E /* ActiveChatCell.swift */; };
+		550A070E24409F90007C171E /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A070D24409F90007C171E /* WaitingChatCell.swift */; };
+		550A071024409FB1007C171E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A070F24409FB1007C171E /* ListViewController.swift */; };
+		550A071224409FD3007C171E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A071124409FD3007C171E /* MainTabBarController.swift */; };
+		550A071424409FED007C171E /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A071324409FED007C171E /* PeopleViewController.swift */; };
+		550A07192440A0C5007C171E /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A07182440A0C5007C171E /* SelfConfiguringCell.swift */; };
+		550A071B2440A116007C171E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A071A2440A116007C171E /* GradientView.swift */; };
+		550A071D2440A13D007C171E /* Bundle - Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A071C2440A13D007C171E /* Bundle - Decodable.swift */; };
+		550A071F2440A1DF007C171E /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A071E2440A1DF007C171E /* SegmentedControl + Extension.swift */; };
+		550A07212440A1F4007C171E /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 550A07202440A1F3007C171E /* activeChats.json */; };
+		550A07232440A1FC007C171E /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 550A07222440A1FC007C171E /* waitingChats.json */; };
+		550A07252440B025007C171E /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A07242440B025007C171E /* SectionHeader.swift */; };
+		550A072724410181007C171E /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 550A072624410181007C171E /* users.json */; };
+		550A072A244102A6007C171E /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A0729244102A6007C171E /* MUser.swift */; };
+		550A072C24410312007C171E /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A072B24410312007C171E /* MChat.swift */; };
+		550A072E2441089A007C171E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A072D2441089A007C171E /* UserCell.swift */; };
+		550A073024410A13007C171E /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A072F24410A13007C171E /* UIViewController + Extension.swift */; };
+		550A0733244125F7007C171E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A0732244125F7007C171E /* ProfileViewController.swift */; };
+		550A073524412743007C171E /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A073424412743007C171E /* InsertableTextField.swift */; };
+		550A073724412849007C171E /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A073624412849007C171E /* UIView + Extension.swift */; };
+		550A073924412BDF007C171E /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A073824412BDF007C171E /* ChatRequestViewController.swift */; };
+		550A073B2441DFA4007C171E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 550A073A2441DFA4007C171E /* GoogleService-Info.plist */; };
+		550A073D2441E68C007C171E /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A073C2441E68C007C171E /* Validators.swift */; };
+		550A073F2441E813007C171E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A073E2441E813007C171E /* AuthService.swift */; };
+		550A07412441E844007C171E /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A07402441E844007C171E /* AuthError.swift */; };
+		550A074424424FCD007C171E /* AuthNavigatingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A074324424FCD007C171E /* AuthNavigatingDelegate.swift */; };
+		550A074724425B1D007C171E /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A074624425B1D007C171E /* FirestoreService.swift */; };
+		550A074924425D66007C171E /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A074824425D66007C171E /* UserError.swift */; };
+		550A074B24433D5A007C171E /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A074A24433D5A007C171E /* UIApplication + Extension.swift */; };
+		550A074D24433FB7007C171E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A074C24433FB7007C171E /* StorageService.swift */; };
+		550A074F24437306007C171E /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A074E24437306007C171E /* UIImage + Extension.swift */; };
+		550A075124437CFD007C171E /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A075024437CFD007C171E /* ListenerService.swift */; };
+		550A07532443ACA0007C171E /* WaitingChatsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A07522443AC9F007C171E /* WaitingChatsNavigation.swift */; };
+		550A07552443ACE7007C171E /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A07542443ACE7007C171E /* MMessage.swift */; };
+		550A07572443AD90007C171E /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A07562443AD90007C171E /* ChatsViewController.swift */; };
+		5A887289EA64234C8601CD24 /* Pods_IChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793368702D4BC372F0778D4B /* Pods_IChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		550A06BE243D24EE007C171E /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		550A06C1243D24EE007C171E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		550A06C3243D24EE007C171E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		550A06C5243D24EE007C171E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		550A06C8243D24EE007C171E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		550A06C5243D24EE007C171E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		550A06CA243D24F2007C171E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		550A06CD243D24F2007C171E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		550A06CF243D24F2007C171E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550A06D5243D3339007C171E /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		550A06D7243D3796007C171E /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		550A06D9243D39B3007C171E /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		550A06DB243DF32F007C171E /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
+		550A06DD243DF4FB007C171E /* UIimageView + Extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIimageView + Extansion.swift"; sourceTree = "<group>"; };
+		550A06E1243DFA7C007C171E /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		550A06E3243E5B60007C171E /* StackViev + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackViev + Extension.swift"; sourceTree = "<group>"; };
+		550A06E5243E7FBE007C171E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		550A06E7243E88A9007C171E /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		550A06E9243FADBA007C171E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		550A06EB243FB7EF007C171E /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		550A06ED243FB9A9007C171E /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		550A070B24409F61007C171E /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
+		550A070D24409F90007C171E /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
+		550A070F24409FB1007C171E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		550A071124409FD3007C171E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		550A071324409FED007C171E /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		550A07182440A0C5007C171E /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		550A071A2440A116007C171E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		550A071C2440A13D007C171E /* Bundle - Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle - Decodable.swift"; sourceTree = "<group>"; };
+		550A071E2440A1DF007C171E /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
+		550A07202440A1F3007C171E /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activeChats.json; sourceTree = "<group>"; };
+		550A07222440A1FC007C171E /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waitingChats.json; sourceTree = "<group>"; };
+		550A07242440B025007C171E /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		550A072624410181007C171E /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		550A0729244102A6007C171E /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		550A072B24410312007C171E /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
+		550A072D2441089A007C171E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		550A072F24410A13007C171E /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		550A0732244125F7007C171E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		550A073424412743007C171E /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		550A073624412849007C171E /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		550A073824412BDF007C171E /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
+		550A073A2441DFA4007C171E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		550A073C2441E68C007C171E /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		550A073E2441E813007C171E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		550A07402441E844007C171E /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		550A074324424FCD007C171E /* AuthNavigatingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigatingDelegate.swift; sourceTree = "<group>"; };
+		550A074624425B1D007C171E /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		550A074824425D66007C171E /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		550A074A24433D5A007C171E /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
+		550A074C24433FB7007C171E /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		550A074E24437306007C171E /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		550A075024437CFD007C171E /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		550A07522443AC9F007C171E /* WaitingChatsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatsNavigation.swift; sourceTree = "<group>"; };
+		550A07542443ACE7007C171E /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
+		550A07562443AD90007C171E /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		58F1961E934FF8E18335FABF /* Pods-IChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.release.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.release.xcconfig"; sourceTree = "<group>"; };
+		793368702D4BC372F0778D4B /* Pods_IChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F4174D97F5AFEF35BDDC69 /* Pods-IChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.debug.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A887289EA64234C8601CD24 /* Pods_IChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +139,8 @@
 			children = (
 				550A06C0243D24EE007C171E /* IChat */,
 				550A06BF243D24EE007C171E /* Products */,
+				98F532516752917DD76290D4 /* Pods */,
+				C02E388A120225D20FF580A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +157,156 @@
 			children = (
 				550A06C1243D24EE007C171E /* AppDelegate.swift */,
 				550A06C3243D24EE007C171E /* SceneDelegate.swift */,
-				550A06C5243D24EE007C171E /* ViewController.swift */,
-				550A06C7243D24EE007C171E /* Main.storyboard */,
+				550A074524425AEB007C171E /* Service */,
+				550A07172440A09B007C171E /* Protocol */,
+				550A0731244123F3007C171E /* Model */,
+				550A070924409F35007C171E /* Controller */,
+				550A07152440A010007C171E /* SignIn&Auth */,
+				550A06E0243DF6EB007C171E /* Extensions */,
+				550A07422441E98F007C171E /* Helpers */,
 				550A06CA243D24F2007C171E /* Assets.xcassets */,
 				550A06CC243D24F2007C171E /* LaunchScreen.storyboard */,
 				550A06CF243D24F2007C171E /* Info.plist */,
+				550A073A2441DFA4007C171E /* GoogleService-Info.plist */,
 			);
 			path = IChat;
+			sourceTree = "<group>";
+		};
+		550A06DF243DF6DE007C171E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				550A072F24410A13007C171E /* UIViewController + Extension.swift */,
+				550A074E24437306007C171E /* UIImage + Extension.swift */,
+				550A074A24433D5A007C171E /* UIApplication + Extension.swift */,
+				550A073624412849007C171E /* UIView + Extension.swift */,
+				550A06D5243D3339007C171E /* UIButton + Extension.swift */,
+				550A06DB243DF32F007C171E /* Label + Extension.swift */,
+				550A06D7243D3796007C171E /* UIFont + Extension.swift */,
+				550A06D9243D39B3007C171E /* UIColor + Extension.swift */,
+				550A06DD243DF4FB007C171E /* UIimageView + Extansion.swift */,
+				550A06E3243E5B60007C171E /* StackViev + Extension.swift */,
+				550A071E2440A1DF007C171E /* SegmentedControl + Extension.swift */,
+				550A07202440A1F3007C171E /* activeChats.json */,
+				550A07222440A1FC007C171E /* waitingChats.json */,
+				550A072624410181007C171E /* users.json */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		550A06E0243DF6EB007C171E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				550A06ED243FB9A9007C171E /* AddPhotoView.swift */,
+				550A073424412743007C171E /* InsertableTextField.swift */,
+				550A06E1243DFA7C007C171E /* ButtonFormView.swift */,
+				550A06E7243E88A9007C171E /* OneLineTextField.swift */,
+				550A071A2440A116007C171E /* GradientView.swift */,
+				550A071C2440A13D007C171E /* Bundle - Decodable.swift */,
+				550A06DF243DF6DE007C171E /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		550A070924409F35007C171E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				550A070A24409F4C007C171E /* Cell */,
+				550A0728244101E9007C171E /* Header */,
+				550A071124409FD3007C171E /* MainTabBarController.swift */,
+				550A070F24409FB1007C171E /* ListViewController.swift */,
+				550A071324409FED007C171E /* PeopleViewController.swift */,
+				550A0732244125F7007C171E /* ProfileViewController.swift */,
+				550A073824412BDF007C171E /* ChatRequestViewController.swift */,
+				550A07562443AD90007C171E /* ChatsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		550A070A24409F4C007C171E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				550A070B24409F61007C171E /* ActiveChatCell.swift */,
+				550A070D24409F90007C171E /* WaitingChatCell.swift */,
+				550A072D2441089A007C171E /* UserCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		550A07152440A010007C171E /* SignIn&Auth */ = {
+			isa = PBXGroup;
+			children = (
+				550A06C5243D24EE007C171E /* AuthViewController.swift */,
+				550A06E5243E7FBE007C171E /* SignUpViewController.swift */,
+				550A06E9243FADBA007C171E /* LoginViewController.swift */,
+				550A06EB243FB7EF007C171E /* SetupProfileViewController.swift */,
+			);
+			path = "SignIn&Auth";
+			sourceTree = "<group>";
+		};
+		550A07172440A09B007C171E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				550A07182440A0C5007C171E /* SelfConfiguringCell.swift */,
+				550A074324424FCD007C171E /* AuthNavigatingDelegate.swift */,
+				550A07522443AC9F007C171E /* WaitingChatsNavigation.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		550A0728244101E9007C171E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				550A07242440B025007C171E /* SectionHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		550A0731244123F3007C171E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				550A0729244102A6007C171E /* MUser.swift */,
+				550A072B24410312007C171E /* MChat.swift */,
+				550A07542443ACE7007C171E /* MMessage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		550A07422441E98F007C171E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				550A073C2441E68C007C171E /* Validators.swift */,
+				550A07402441E844007C171E /* AuthError.swift */,
+				550A074824425D66007C171E /* UserError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		550A074524425AEB007C171E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				550A073E2441E813007C171E /* AuthService.swift */,
+				550A074624425B1D007C171E /* FirestoreService.swift */,
+				550A074C24433FB7007C171E /* StorageService.swift */,
+				550A075024437CFD007C171E /* ListenerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		98F532516752917DD76290D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2F4174D97F5AFEF35BDDC69 /* Pods-IChat.debug.xcconfig */,
+				58F1961E934FF8E18335FABF /* Pods-IChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C02E388A120225D20FF580A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				793368702D4BC372F0778D4B /* Pods_IChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +316,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 550A06D2243D24F2007C171E /* Build configuration list for PBXNativeTarget "IChat" */;
 			buildPhases = (
+				60EE0BA5C522C742D3C0ECA2 /* [CP] Check Pods Manifest.lock */,
 				550A06BA243D24EE007C171E /* Sources */,
 				550A06BB243D24EE007C171E /* Frameworks */,
 				550A06BC243D24EE007C171E /* Resources */,
+				B32924E2C3F8821AFECCEA17 /* [CP] Embed Pods Frameworks */,
+				00988250CDF01AC12F5D5C2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,36 +370,133 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550A072724410181007C171E /* users.json in Resources */,
 				550A06CE243D24F2007C171E /* LaunchScreen.storyboard in Resources */,
+				550A07212440A1F4007C171E /* activeChats.json in Resources */,
 				550A06CB243D24F2007C171E /* Assets.xcassets in Resources */,
-				550A06C9243D24EE007C171E /* Main.storyboard in Resources */,
+				550A07232440A1FC007C171E /* waitingChats.json in Resources */,
+				550A073B2441DFA4007C171E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00988250CDF01AC12F5D5C2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60EE0BA5C522C742D3C0ECA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32924E2C3F8821AFECCEA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		550A06BA243D24EE007C171E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550A06C6243D24EE007C171E /* ViewController.swift in Sources */,
+				550A072C24410312007C171E /* MChat.swift in Sources */,
+				550A06E8243E88A9007C171E /* OneLineTextField.swift in Sources */,
+				550A071D2440A13D007C171E /* Bundle - Decodable.swift in Sources */,
+				550A07252440B025007C171E /* SectionHeader.swift in Sources */,
+				550A074B24433D5A007C171E /* UIApplication + Extension.swift in Sources */,
+				550A06E6243E7FBE007C171E /* SignUpViewController.swift in Sources */,
+				550A071B2440A116007C171E /* GradientView.swift in Sources */,
+				550A07412441E844007C171E /* AuthError.swift in Sources */,
+				550A06DE243DF4FB007C171E /* UIimageView + Extansion.swift in Sources */,
+				550A07532443ACA0007C171E /* WaitingChatsNavigation.swift in Sources */,
+				550A072A244102A6007C171E /* MUser.swift in Sources */,
+				550A06D8243D3796007C171E /* UIFont + Extension.swift in Sources */,
+				550A06EC243FB7EF007C171E /* SetupProfileViewController.swift in Sources */,
+				550A073524412743007C171E /* InsertableTextField.swift in Sources */,
+				550A071424409FED007C171E /* PeopleViewController.swift in Sources */,
+				550A06C6243D24EE007C171E /* AuthViewController.swift in Sources */,
+				550A0733244125F7007C171E /* ProfileViewController.swift in Sources */,
+				550A074724425B1D007C171E /* FirestoreService.swift in Sources */,
+				550A06E2243DFA7C007C171E /* ButtonFormView.swift in Sources */,
+				550A073924412BDF007C171E /* ChatRequestViewController.swift in Sources */,
+				550A06EE243FB9A9007C171E /* AddPhotoView.swift in Sources */,
+				550A06DC243DF32F007C171E /* Label + Extension.swift in Sources */,
+				550A075124437CFD007C171E /* ListenerService.swift in Sources */,
 				550A06C2243D24EE007C171E /* AppDelegate.swift in Sources */,
+				550A06E4243E5B60007C171E /* StackViev + Extension.swift in Sources */,
+				550A070C24409F61007C171E /* ActiveChatCell.swift in Sources */,
+				550A074924425D66007C171E /* UserError.swift in Sources */,
+				550A073724412849007C171E /* UIView + Extension.swift in Sources */,
+				550A07572443AD90007C171E /* ChatsViewController.swift in Sources */,
+				550A06DA243D39B3007C171E /* UIColor + Extension.swift in Sources */,
+				550A07192440A0C5007C171E /* SelfConfiguringCell.swift in Sources */,
+				550A074D24433FB7007C171E /* StorageService.swift in Sources */,
+				550A072E2441089A007C171E /* UserCell.swift in Sources */,
+				550A07552443ACE7007C171E /* MMessage.swift in Sources */,
+				550A073024410A13007C171E /* UIViewController + Extension.swift in Sources */,
+				550A074424424FCD007C171E /* AuthNavigatingDelegate.swift in Sources */,
+				550A073D2441E68C007C171E /* Validators.swift in Sources */,
+				550A073F2441E813007C171E /* AuthService.swift in Sources */,
+				550A071224409FD3007C171E /* MainTabBarController.swift in Sources */,
+				550A074F24437306007C171E /* UIImage + Extension.swift in Sources */,
+				550A071F2440A1DF007C171E /* SegmentedControl + Extension.swift in Sources */,
 				550A06C4243D24EE007C171E /* SceneDelegate.swift in Sources */,
+				550A071024409FB1007C171E /* ListViewController.swift in Sources */,
+				550A06EA243FADBA007C171E /* LoginViewController.swift in Sources */,
+				550A06D6243D3339007C171E /* UIButton + Extension.swift in Sources */,
+				550A070E24409F90007C171E /* WaitingChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		550A06C7243D24EE007C171E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				550A06C8243D24EE007C171E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		550A06CC243D24F2007C171E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +624,7 @@
 		};
 		550A06D3243D24F2007C171E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2F4174D97F5AFEF35BDDC69 /* Pods-IChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +642,7 @@
 		};
 		550A06D4243D24F2007C171E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F1961E934FF8E18335FABF /* Pods-IChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
